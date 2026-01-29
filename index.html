@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; scroll-behavior: smooth; }
         .glass-card { background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); }
         .accent-blue { color: #60a5fa; }
         .section-title { border-left: 4px solid #3b82f6; padding-left: 1rem; }
@@ -21,17 +21,23 @@
             <img src="foto-perfil.png" alt="Enrique Mejías" class="w-44 h-44 rounded-2xl object-cover shadow-2xl border-2 border-slate-700">
             <div class="text-center md:text-left flex-1">
                 <h1 class="text-4xl font-bold text-white mb-2">Enrique Mejías Valero</h1>
-                <p class="text-blue-400 text-xl font-medium mb-6 uppercase tracking-widest">Analista de Datos Junior | Business Analyst Junior</p>
+                <p class="text-blue-400 text-xl font-medium mb-4 uppercase tracking-widest">Analista de Datos Junior | Business Analyst Junior</p>
                 
-                <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="mailto:eamveurope@gmail.com" class="bg-red-600/10 hover:bg-red-600/20 text-red-400 border border-red-600/30 px-5 py-2 rounded-lg transition flex items-center gap-2">
-                        <i class="fas fa-envelope"></i> eamveurope@gmail.com
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6 text-sm text-slate-400">
+                    <span class="flex items-center gap-2"><i class="fas fa-id-card text-blue-500"></i> Carnet B</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-car text-blue-500"></i> Coche propio</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-blue-500"></i> Zaragoza, España</span>
+                </div>
+
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="mailto:eamveurope@gmail.com" class="bg-white/5 hover:bg-white/10 text-white border border-white/20 px-5 py-2 rounded-lg transition flex items-center gap-2">
+                        <i class="fas fa-envelope text-red-400"></i> Correo
                     </a>
-                    <a href="https://www.linkedin.com/in/enrique-mejías" target="_blank" class="bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-600/30 px-5 py-2 rounded-lg transition flex items-center gap-2">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                    <a href="curriculum.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition flex items-center gap-2 shadow-lg shadow-blue-900/20">
+                        <i class="fas fa-file-pdf"></i> Descargar CV
                     </a>
-                    <a href="https://wa.me/34611245131" target="_blank" class="bg-green-600/10 hover:bg-green-600/20 text-green-400 border border-green-600/30 px-5 py-2 rounded-lg transition flex items-center gap-2">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    <a href="https://www.linkedin.com/in/enrique-mejías" target="_blank" class="bg-white/5 hover:bg-white/10 text-white border border-white/20 px-5 py-2 rounded-lg transition flex items-center gap-2">
+                        <i class="fab fa-linkedin text-blue-400"></i> LinkedIn
                     </a>
                 </div>
             </div>
@@ -42,7 +48,7 @@
 
         <section class="glass-card p-8 rounded-2xl">
             <h2 class="text-2xl font-bold text-white mb-4 section-title">Perfil Profesional</h2>
-            <div class="space-y-4 leading-relaxed">
+            <div class="space-y-4 leading-relaxed text-slate-300">
                 <p>Analista de Datos Junior con sólida base en contabilidad, operaciones y logística, y formación técnica en informática e inteligencia artificial aplicada. Experiencia real en el análisis, limpieza e interpretación de datos operativos y financieros, apoyando la toma de decisiones y la optimización de procesos en entornos empresariales.</p>
                 <p>He trabajado con <strong>Excel avanzado, Google Sheets y sistemas ERP (SAP, NUBOX)</strong> para el análisis de KPIs, elaboración de reportes, control financiero y seguimiento operativo.</p>
                 <p>Actualmente me encuentro en formación especializada en análisis de datos y Business Intelligence, trabajando con <strong>Power BI, SQL y Python</strong>, así como en el desarrollo de soluciones web y aplicaciones básicas para la visualización y explotación de datos.</p>
@@ -58,7 +64,7 @@
                         <h3 class="text-xl font-bold text-blue-400">Analista Contable – Análisis de Datos Financieros</h3>
                         <p class="text-white">Constructora Continental Johan Barrera y Asociados (Chile)</p>
                     </div>
-                    <span class="text-slate-500 font-mono text-sm mt-2">Ago 2021 – Ago 2022</span>
+                    <span class="text-slate-500 font-mono text-sm mt-2 uppercase">Ago 2021 – Ago 2022</span>
                 </div>
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
@@ -71,7 +77,7 @@
                         </ul>
                     </div>
                     <div class="bg-blue-600/5 p-4 rounded-xl border border-blue-600/20">
-                        <p class="text-xs font-bold uppercase text-blue-400 mb-2">Logros destacados:</p>
+                        <p class="text-xs font-bold uppercase text-blue-400 mb-2 font-bold">Logros destacados:</p>
                         <ul class="text-sm italic space-y-1">
                             <li>- Reducción tiempo de cierre mensual en 25%.</li>
                             <li>- Disminución de errores en nómina en 90%.</li>
@@ -89,12 +95,12 @@
                 <p class="text-white mb-4 italic">Randstad Chile S.A.</p>
                 <div class="grid md:grid-cols-2 gap-6 text-sm">
                     <ul class="space-y-2">
-                        <li><i class="fas fa-database text-green-600 mr-2"></i> Gestión, limpieza y organización de bases en Excel/Sheets.</li>
+                        <li><i class="fas fa-database text-green-600 mr-2"></i> Gestión y limpieza de bases en Excel/Sheets.</li>
                         <li><i class="fas fa-chart-line text-green-600 mr-2"></i> Análisis de desempeño e identificación de tendencias.</li>
                     </ul>
                     <div class="bg-green-600/5 p-4 rounded-xl border border-green-600/20">
-                        <p class="text-xs font-bold uppercase text-green-400 mb-2">Logros:</p>
-                        <p>- Eficiencia de reportes +40% | Productividad +28%</p>
+                        <p class="text-xs font-bold uppercase text-green-400 mb-2 font-bold">Logros:</p>
+                        <p class="italic">Mejora eficiencia reportes +40% | Productividad +28% | Tiempo análisis -35%</p>
                     </div>
                 </div>
             </div>
@@ -123,42 +129,50 @@
                 <p class="text-slate-500 text-sm mb-6 uppercase tracking-widest">Oct 2012 – Mar 2019 | ERP NUBOX</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="bg-slate-800 p-4 rounded-xl text-center">
-                        <p class="text-blue-400 font-bold text-xl leading-none">12</p>
-                        <p class="text-[10px] text-slate-500 mt-2 italic text-wrap">Licitaciones Adjudicadas</p>
+                        <p class="text-blue-400 font-bold text-xl">12</p>
+                        <p class="text-[10px] text-slate-500 mt-1 italic">Licitaciones</p>
                     </div>
                     <div class="bg-slate-800 p-4 rounded-xl text-center">
-                        <p class="text-blue-400 font-bold text-xl leading-none">USD 2.5M</p>
-                        <p class="text-[10px] text-slate-500 mt-2 italic">Valor Contratos</p>
+                        <p class="text-blue-400 font-bold text-xl">USD 2.5M</p>
+                        <p class="text-[10px] text-slate-500 mt-1 italic text-wrap">Adjudicados</p>
                     </div>
                     <div class="bg-slate-800 p-4 rounded-xl text-center">
-                        <p class="text-blue-400 font-bold text-xl leading-none">45%</p>
-                        <p class="text-[10px] text-slate-500 mt-2 italic text-wrap">Optimización Conciliación</p>
+                        <p class="text-blue-400 font-bold text-xl">45%</p>
+                        <p class="text-[10px] text-slate-500 mt-1 italic text-wrap">Optimización</p>
                     </div>
                     <div class="bg-slate-800 p-4 rounded-xl text-center">
-                        <p class="text-blue-400 font-bold text-xl leading-none">0</p>
-                        <p class="text-[10px] text-slate-500 mt-2 italic">Observaciones Auditoría</p>
+                        <p class="text-blue-400 font-bold text-xl">0</p>
+                        <p class="text-[10px] text-slate-500 mt-1 italic">Audit. OK</p>
                     </div>
                 </div>
+            </div>
+            
+            <div class="glass-card p-6 rounded-2xl flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-white italic text-lg">Inversor Financiero Digital</h3>
+                    <p class="text-slate-500 text-sm">Binance (Remoto) | 2021 – Actualidad</p>
+                </div>
+                <i class="fab fa-bitcoin text-yellow-500/20 text-4xl"></i>
             </div>
         </section>
 
         <section>
             <h2 class="text-2xl font-bold text-white mb-8 section-title">Habilidades & Tecnología</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="glass-card p-6 rounded-2xl text-center">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="glass-card p-6 rounded-2xl">
                     <i class="fas fa-microchip text-blue-400 text-3xl mb-4"></i>
-                    <h4 class="font-bold text-white mb-2">Tecnología e IA</h4>
-                    <p class="text-xs text-slate-500">ChatGPT, Gemini, Claude, NotebookLM, IA aplicada a productividad.</p>
+                    <h4 class="font-bold text-white mb-2 uppercase text-xs tracking-widest">Tecnología e IA</h4>
+                    <p class="text-xs text-slate-400">ChatGPT, Gemini, Claude, NotebookLM, Perplexity. IA aplicada a productividad.</p>
                 </div>
-                <div class="glass-card p-6 rounded-2xl text-center">
+                <div class="glass-card p-6 rounded-2xl">
                     <i class="fas fa-chart-pie text-purple-400 text-3xl mb-4"></i>
-                    <h4 class="font-bold text-white mb-2">Análisis y BI</h4>
-                    <p class="text-xs text-slate-500">Excel Avanzado, Power BI, SQL, Python (Inicial), ERP SAP/NUBOX.</p>
+                    <h4 class="font-bold text-white mb-2 uppercase text-xs tracking-widest">Análisis y BI</h4>
+                    <p class="text-xs text-slate-400">Excel Avanzado, Power BI, SQL, Python (Inicial), ERP SAP/NUBOX.</p>
                 </div>
-                <div class="glass-card p-6 rounded-2xl text-center">
-                    <i class="fas fa-globe text-green-400 text-3xl mb-4"></i>
-                    <h4 class="font-bold text-white mb-2">Idiomas</h4>
-                    <p class="text-xs text-slate-500">Español (Nativo) e Inglés (Intermedio).</p>
+                <div class="glass-card p-6 rounded-2xl">
+                    <i class="fas fa-language text-green-400 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-white mb-2 uppercase text-xs tracking-widest">Idiomas</h4>
+                    <p class="text-xs text-slate-400">Español (Nativo) e Inglés (Intermedio).</p>
                 </div>
             </div>
         </section>
@@ -166,7 +180,7 @@
         <section>
             <h2 class="text-2xl font-bold text-white mb-8 section-title">Educación</h2>
             <div class="grid md:grid-cols-2 gap-4 text-sm">
-                <div class="glass-card p-4 rounded-xl">
+                <div class="glass-card p-4 rounded-xl border-l-4 border-l-blue-500">
                     <h4 class="font-bold text-white">IA Generativa y Análisis de Datos</h4>
                     <p class="text-slate-500 italic">Grupo Piquer, INAEM (2026)</p>
                 </div>
@@ -176,7 +190,7 @@
                 </div>
                 <div class="glass-card p-4 rounded-xl">
                     <h4 class="font-bold text-white">Técnico Medio en Informática</h4>
-                    <p class="text-slate-500 italic">Escuela Técnica Privada (2007)</p>
+                    <p class="text-slate-500 italic">Escuela Técnica Privada Maracay (2007)</p>
                 </div>
                 <div class="glass-card p-4 rounded-xl">
                     <h4 class="font-bold text-white">Gestión de Almacenes (Nivel 3)</h4>
@@ -187,8 +201,20 @@
 
     </main>
 
-    <footer class="py-12 border-t border-slate-800 text-center">
-        <p class="text-slate-500 text-[10px] uppercase tracking-[0.5em]">Enrique Mejías Valero | Analista de Datos 2026</p>
+    <footer class="py-20 bg-slate-900 border-t border-slate-800 text-center">
+        <h3 class="text-white font-bold mb-8 uppercase tracking-[0.3em] text-sm">¿Hablamos?</h3>
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <a href="mailto:eamveurope@gmail.com" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-red-500/20 hover:border-red-500/50 transition">
+                <i class="fas fa-envelope text-red-400"></i>
+            </a>
+            <a href="https://wa.me/34611245131" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-green-500/20 hover:border-green-500/50 transition">
+                <i class="fab fa-whatsapp text-green-400"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/enrique-mejías" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 border border-white/10 hover:bg-blue-500/20 hover:border-blue-500/50 transition">
+                <i class="fab fa-linkedin text-blue-400"></i>
+            </a>
+        </div>
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.5em]">Enrique Mejías Valero | Analista de Datos 2026</p>
     </footer>
 
 </body>
